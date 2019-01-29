@@ -31,7 +31,21 @@ namespace Viskositeettilaskin
 
         private void MainWindows_load(object sender, EventArgs e)
         {
+            ComboBox.Items.Clear();
+            con.open();
+            cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "SELECT Product FROM Categories";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlCeDataAdapter da = new SqlCeDataAdapter(cmd);
+            da.Fill(dt);
 
+            foreach (DataRow dr in dt.Rows)
+            {
+ComboBox.items.add(dr["Product"].ToString())
+            }
+            con.Close();
         }
 
        
