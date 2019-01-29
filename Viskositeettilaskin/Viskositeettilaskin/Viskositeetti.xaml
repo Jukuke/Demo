@@ -1,0 +1,18 @@
+﻿<Window x:Class="Viskositeettilaskin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Viskositeettilaskin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="Kosteus" HorizontalAlignment="Left" Height="40" Margin="190,81,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Width="90" RenderTransformOrigin="1.067,1.08" TextChanged="Kosteus_TextChanged"/>
+        <ComboBox x:Name="Valinta" HorizontalAlignment="Left" Height="26" Margin="70,130,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="-2.114,1.39" SelectionChanged="Valinta_SelectionChanged"/>
+        <Button x:Name="Haku" Content="Haku" HorizontalAlignment="Left" Height="26" Margin="70,180,0,0" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="Ominaislämpökapasiteetti" HorizontalAlignment="Left" Height="40" Margin="330,81,0,0" TextWrapping="Wrap" Text="tavara" VerticalAlignment="Top" Width="90"/>
+        <Label Content="ID" HorizontalAlignment="Left" Height="26" Margin="0,130,0,0" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="Ominaislämpökapasiteetti_Copy" HorizontalAlignment="Left" Height="40" Margin="440,81,0,0" TextWrapping="Wrap" Text="tavara" VerticalAlignment="Top" Width="90"/>
+
+    </Grid>
+</Window>
